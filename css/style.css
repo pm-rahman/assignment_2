@@ -320,7 +320,11 @@ footer p {
     }
 
     .features_left {
-        margin-top: 25px;
+        margin-top: 141px;
+        width: 100%;
+    }
+
+    .features_right img{
         width: 100%;
     }
 
@@ -350,6 +354,9 @@ footer p {
 
     .awards_sections {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .awards .section_title {
+        margin-top: 42px;
     }
     .recent_projects {
         grid-template-columns: repeat(2,1fr);
@@ -399,7 +406,7 @@ footer p {
         width: 100%;
     }
     .recent_project_section{
-        margin-top: 33%;  
+        margin-top: 39%;  
     }
     .sponspors_logos {
         grid-template-columns: repeat(1, 1fr);
@@ -410,6 +417,10 @@ footer p {
         width: 80%;
         margin: auto;
     }
+    footer p {
+        font-size: 12px;
+    }
+    
 
 }
 @media  screen and (max-width:488px) {
@@ -436,4 +447,8 @@ footer p {
     .recent_project_section{
         margin-top: 43%;  
     }
+    footer p {
+        font-size: 10px;
+    }
+    
 }
