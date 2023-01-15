@@ -351,12 +351,15 @@ footer p {
         bottom: 2vh;
         left: 37%;
     }
-
     .awards_sections {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: 31px 0;
     }
     .awards .section_title {
         margin-top: 42px;
+    }
+    .recent_project_section {
+        margin-top: 10%;
     }
     .recent_projects {
         grid-template-columns: repeat(2,1fr);
@@ -381,9 +384,6 @@ footer p {
     #figma{
         grid-column: 4/6;
     }
-    .recent_project_section{
-        margin-top: 28%;  
-    }
 
 }
 
@@ -404,9 +404,6 @@ footer p {
     }
     .recent_projects img{
         width: 100%;
-    }
-    .recent_project_section{
-        margin-top: 39%;  
     }
     .sponspors_logos {
         grid-template-columns: repeat(1, 1fr);
@@ -444,11 +441,25 @@ footer p {
     }
 }
 @media screen and (max-width:464px) {
+    .awards_sections {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .recent_project_section{
         margin-top: 43%;  
     }
     footer p {
         font-size: 10px;
     }
+    .section_title {
+        font-size: 32px;
+    }
+    .section_bio {
+        font-size: 13px;
+    }
     
+}
+@media screen and (max-width:464px){
+    .recent_project_section{
+        margin-top: 45%;  
+    }
 }
