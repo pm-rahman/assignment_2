@@ -194,6 +194,7 @@ header {
 }
 
 .awards_section {
+    border-radius: 3px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 25px 15px;
@@ -222,7 +223,32 @@ header {
     font-size: 20px;
     color: #727272;
 }
-
+/* recent project */
+.recent_project_section{
+    text-align: center;
+}
+.recent_projects {
+    margin: 25px 0 54px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.recent_project{
+    text-align: left;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    transition: ease-in-out .4s;
+}
+.recent_project:hover{
+    transform: scale(1.1);
+}
+.recent_project a{
+    text-decoration: none;
+}
+.recent_project img{
+    margin-bottom: 1vh;
+}
 /* sponspors section */
 .sponspors {
     text-align: center;
@@ -319,11 +345,14 @@ footer p {
 
     .img_extra {
         bottom: 2vh;
-        left: 12vh;
+        left: 37%;
     }
 
     .awards_sections {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .recent_projects {
+        grid-template-columns: repeat(2,1fr);
     }
     .sponspors_logos {
         grid-template-columns: repeat(6, 1fr);
@@ -345,9 +374,8 @@ footer p {
     #figma{
         grid-column: 4/6;
     }
-
-    .sponspors {
-        margin-top: 28%;
+    .recent_project_section{
+        margin-top: 28%;  
     }
 
 }
@@ -364,8 +392,14 @@ footer p {
     .features_left {
         margin-top: 100px;
     }
-    .sponspors {
-        margin-top: 33%;
+    .recent_projects {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .recent_projects img{
+        width: 100%;
+    }
+    .recent_project_section{
+        margin-top: 33%;  
     }
     .sponspors_logos {
         grid-template-columns: repeat(1, 1fr);
@@ -393,16 +427,13 @@ footer p {
         margin-top: 80px;
     }
 
-    .img_extra {
-        /* left: 5vh; */
-    }
 
     .awards .section_bio {
         font-size: 13px;
     }
 }
 @media screen and (max-width:464px) {
-    .sponspors {
-        margin-top: 42%;
+    .recent_project_section{
+        margin-top: 43%;  
     }
 }
