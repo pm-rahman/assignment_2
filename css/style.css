@@ -1,0 +1,395 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans';
+}
+
+body {
+    width: 100% !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+img {
+    max-width: 100% !important;
+}
+
+.container {
+    padding: 0 80px;
+}
+
+.section_title {
+    font-weight: 700;
+    font-size: 38px;
+    color: #131313;
+}
+
+.section_bio {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+/* header css */
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    padding: 0 10px;
+}
+
+.slider {
+    text-align: center;
+}
+
+.slider_header {
+    width: 60%;
+    margin: auto;
+}
+
+.header_title {
+    font-weight: 700;
+    font-size: 50px;
+    color: #131313;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    display: inline-block;
+    padding: 15px 18px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.slider img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* features section */
+.features {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.features_right {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 55%;
+}
+
+.features_left {
+    width: 40%;
+}
+
+.grey_text {
+    font-weight: 500;
+    color: #727272;
+}
+
+.gold_text {
+    font-weight: 700;
+    color: #FF900E;
+}
+
+/* experience section css */
+.experience {
+    display: flex;
+    gap: 8%;
+}
+
+.experience_right {
+    width: 46%;
+}
+
+.experience_left {
+    width: 46%;
+}
+
+.experience_details h2 {
+    border-left: 4px solid #FF900E;
+    padding-left: 2vh;
+    margin-bottom: 3vh;
+}
+
+
+.experience_details_card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 2vh;
+}
+
+.card_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 1vh;
+}
+
+.experience_img {
+    position: relative;
+}
+
+.img_extra {
+    position: absolute;
+    bottom: -3vh;
+    left: -4vh;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.img_extra h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.img_extra p {
+    font-size: 20px;
+}
+
+/* award section */
+.section_title {
+    margin-top: 100px;
+}
+
+.awards_sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8%;
+    margin: 70px 0;
+}
+
+.awards_section {
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    transition: ease-in-out .4s;
+}
+
+.awards_section:hover {
+    transform: scale(1.1);
+    background-color: #fbf4eb;
+}
+
+.awards_section img {
+    width: 40px;
+    height: 40px;
+}
+
+.awards_section h3 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #424242;
+}
+
+.awards_section p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+/* sponspors section */
+.sponspors {
+    text-align: center;
+}
+
+.sponspors_logos {
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 50px 0;
+}
+#spotify{
+    grid-column: 1/3;
+}
+#amazon{
+    grid-column: 3/5;
+}
+#google{
+    grid-column: 5/7;
+}
+#telerama{
+    grid-column: 7/9;
+}
+#figma{
+    grid-column: 9/11;
+}
+
+/* footer css */
+footer p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+    padding: 25px 0;
+    border-radius: 5px;
+    background-color: #FFF4E7;
+}
+
+/* responsive css */
+@media screen and (max-width:689px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .slider_header {
+        width: 90%;
+    }
+
+    .header_title {
+        font-size: 38px;
+        margin-top: 60px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features_right {
+        width: 100%;
+    }
+
+    .features_left {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience_right {
+        width: 100%;
+    }
+
+    .experience_left {
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .experience_header {
+        margin-bottom: 2vh;
+    }
+
+    .img_extra {
+        bottom: 2vh;
+        left: 12vh;
+    }
+
+    .awards_sections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponspors_logos {
+        grid-template-columns: repeat(6, 1fr);
+        margin: 30px 0;
+        row-gap: 20px;
+    }
+    #spotify{
+        grid-column: 1/3;
+    }
+    #amazon{
+        grid-column: 3/5;
+    }
+    #google{
+        grid-column: 5/7;
+    }
+    #telerama{
+        grid-column: 2/4;
+    }
+    #figma{
+        grid-column: 4/6;
+    }
+
+    .sponspors {
+        margin-top: 11vh;
+    }
+
+}
+
+@media screen and (max-width:577px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .features_right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features_left {
+        margin-top: 100px;
+    }
+
+    .img_extra {
+        left: 8vh;
+    }
+
+    .sponspors_logos {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .sponspors_logos img {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:478px) {
+    .header_title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .features_left {
+        margin-top: 80px;
+    }
+
+    .img_extra {
+        left: 5vh;
+    }
+
+    .awards .section_bio {
+        font-size: 13px;
+    }
+}
