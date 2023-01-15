@@ -437,7 +437,7 @@ footer p {
 
 
     .awards .section_bio {
-        font-size: 13px;
+        font-size: 11px;
     }
 }
 @media screen and (max-width:464px) {
@@ -454,7 +454,7 @@ footer p {
         font-size: 32px;
     }
     .section_bio {
-        font-size: 13px;
+        font-size: 11px;
     }
     
 }
